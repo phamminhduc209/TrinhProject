@@ -162,19 +162,19 @@
     }
 }
 .block {
-    margin-bottom: 45px;
+    margin-bottom: 65px;
 }
 .block-title-style1 {
     font-size: 30px;
     font-weight: 300;
     text-align: center;
     color: #4a4a4a;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     z-index: 100;
     &::after {
         display: block;
         content: "";
-        background: #1E69B8;
+        background: #C11201;
         width: 80px;
         height: 2px;
         margin-left: auto;
@@ -183,7 +183,7 @@
     }
 }
 .block-sub-title {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     p {
         color: #777;
         font-size: 15px;
@@ -199,8 +199,8 @@
     height: 66.97px;
     background-color: transparent;
     margin: 33.49px 0;
-    border-left: solid 2px #1E69B8;
-    border-right: solid 2px #1E69B8;
+    border-left: solid 2px #C11201;
+    border-right: solid 2px #C11201;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -228,12 +228,55 @@
     }
     &::before {
         top: -41.0122px;
-        border-top: solid 2.8284px #1E69B8;
-        border-right: solid 2.8284px #1E69B8;
+        border-top: solid 2.8284px #C11201;
+        border-right: solid 2.8284px #C11201;
     }
     &::after {
         bottom: -41.0122px;
-        border-bottom: solid 2.8284px #1E69B8;
-        border-left: solid 2.8284px #1E69B8;
+        border-bottom: solid 2.8284px #C11201;
+        border-left: solid 2.8284px #C11201;
+    }
+    div {
+        &::before {
+            position: relative;
+            z-index: 2;
+            color: #C11201;
+            clear: both;
+            float: none;
+            display: block;
+            font-size: 48px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &.small {
+        width: 90px;
+        height: 51.96px;
+        margin: 25.98px auto;
+        border-left: solid 1px #E2E6E7;
+        border-right: solid 1px #E2E6E7;
+        &::before,
+        &::after {
+            width: 63.64px;
+            height: 63.64px;
+            left: 12.1802px;
+        }
+        &::before {
+            top: -31.8198px;
+            border-top: solid 1.4142px #E2E6E7;
+            border-right: solid 1.4142px #E2E6E7;
+        }
+        &::after {
+            bottom: -31.8198px;
+            border-bottom: solid 1.4142px #E2E6E7;
+            border-left: solid 1.4142px #E2E6E7;
+        }
+        div {
+            &::before {
+                color: #FFF;
+                padding: 2px;
+            }
+        }
     }
 }
