@@ -1,0 +1,37 @@
+.header {
+    background: #fff;
+    .header-logo {
+        padding: 15px 0;
+    }
+    .block-menu {
+        .menu {
+            position: relative;
+            overflow: hidden;
+            text-align: right;
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 50px;
+                a {
+                    color: #6d6c6c;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    text-align: left;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: #a41103;
+                    }
+                }
+                &.active {
+                    a {
+                        color: #a41103;
+                    }
+                }
+                &.search {
+                    margin: 30px 0 30px 30px;
+                }
+            }
+        }
+    }
+}

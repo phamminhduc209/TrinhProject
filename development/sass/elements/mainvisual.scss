@@ -1,0 +1,80 @@
+.block-mainvisual {
+    margin-bottom: 50px;
+    .active {
+        .item {
+            .text-large {
+                -webkit-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
+                -moz-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
+                -o-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
+                -ms-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
+                animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
+            }
+            .text-medium {
+                -webkit-animation: fromRightAnim2 0.7s ease-in-out 0.9s both;
+                -moz-animation: fromRightAnim2 0.7s ease-in-out 0.9s both;
+                -o-animation: fromRightAnim2 0.7s ease-in-out 0.9s both;
+                -ms-animation: fromRightAnim2 0.7s ease-in-out 0.9s both;
+                animation: fromRightAnim2 0.7s ease-in-out 0.9s both;
+            }
+        }
+    }
+    .item {
+        position: relative;
+        .figcaption {
+            position: absolute;
+            top: 0;
+            bottom: 90px;
+            left: 200px;
+            right: 200px;
+            padding: 0;
+            .box-table {
+                .box-td {
+                    .box-des {
+                        padding: 90px 0;
+                        text-align: center;
+                    }
+                }
+            }
+            .text-large {
+                font-size: 42px;
+                font-weight: bold;
+                line-height: normal;
+                letter-spacing: 0.6px;
+                color: #ffffff;
+                margin-bottom: 15px;
+            }
+            .text-medium {
+                color: #FFF;
+                font-size: 21px;
+                font-weight: normal;
+            }
+        }
+    }
+    .owl-carousel {
+        .owl-nav {
+            .owl-prev,
+            .owl-next {
+                color: #FFF;
+                font-size: 50px;
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                transition: all 0.8s;
+                opacity: .5;
+                &:hover {
+                    opacity: 1;
+                    transition: all 0.8s;
+                }
+            }
+            .owl-prev {
+                left: 15px;
+            }
+            .owl-next {
+                right: 15px;
+            }
+        }
+    }
+}
