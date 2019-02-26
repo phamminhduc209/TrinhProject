@@ -280,3 +280,31 @@
         }
     }
 }
+
+.block-breadcrumb {
+    padding: 30px 0;
+    .breadcrumb-header {
+        h1 {
+            font-size: 18px;
+            line-height: 34px;
+        }
+    }
+    .breadcrumb {
+        background: none;
+        border-radius: 0;
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+}
+
+.block-page {
+    padding-top: 40px;
+}
+
+.block-fulltext {
+    p {
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+}

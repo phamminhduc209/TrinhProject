@@ -18,13 +18,16 @@ html {
   padding: 0; }
 
 a {
+  color: #a41103;
   text-decoration: none;
   word-wrap: break-word;
   transition: all 0.25s; }
   a:hover {
+    color: #841207;
     text-decoration: none;
     transition: all 0.25s; }
   a:focus {
+    color: #841207;
     outline: none;
     text-decoration: none;
     outline-offset: 0; }
@@ -425,9 +428,10 @@ body {
 /* ======================== MIXIN ======================== */
 /* ======================== HEADER ======================== */
 .header {
-  background: #fff; }
+  background: #fff;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.05); }
   .header .header-logo {
-    padding: 15px 0; }
+    padding: 27px 0; }
   .header .block-menu .menu {
     position: relative;
     overflow: hidden;
@@ -435,10 +439,10 @@ body {
     .header .block-menu .menu li {
       display: inline-block;
       vertical-align: middle;
-      margin-left: 50px; }
+      margin: 35px 0 35px 40px; }
       .header .block-menu .menu li a {
         color: #6d6c6c;
-        font-size: 15px;
+        font-size: 16px;
         font-style: normal;
         text-transform: uppercase; }
         .header .block-menu .menu li a:hover {
@@ -446,7 +450,7 @@ body {
       .header .block-menu .menu li.active a {
         color: #a41103; }
       .header .block-menu .menu li.search {
-        margin: 30px 0 30px 30px; }
+        margin-right: 0px; }
 
 /* ======================== COMPONENTS ======================== */
 /* Return To Top */
@@ -679,6 +683,25 @@ body {
       color: #FFF;
       padding: 2px; }
 
+.block-breadcrumb {
+  padding: 30px 0; }
+  .block-breadcrumb .breadcrumb-header h1 {
+    font-size: 18px;
+    line-height: 34px; }
+  .block-breadcrumb .breadcrumb {
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 0; }
+
+.block-page {
+  padding-top: 40px; }
+
+.block-fulltext p {
+  line-height: 1.8;
+  margin-bottom: 15px; }
+
 /* ======================== ELEMENTS ======================== */
 .block-mainvisual {
   margin-bottom: 65px; }
@@ -882,6 +905,123 @@ body {
     transition: all .3s;
     border-color: #F68220; }
 
+.block-products .product-list .product-item {
+  position: relative;
+  background: #FFF;
+  padding-bottom: 30px;
+  overflow: hidden; }
+  .block-products .product-list .product-item:hover > a img {
+    transition: opacity 0.3s ease 0s;
+    opacity: 0.8; }
+  .block-products .product-list .product-item:hover h4 a {
+    transition: opacity 0.3s ease 0s;
+    opacity: 0.6; }
+  .block-products .product-list .product-item:nth-child(3n+1) h4 {
+    border-left: none; }
+  .block-products .product-list .product-item a img {
+    transition: opacity 0.3s ease 0s; }
+  .block-products .product-list .product-item h4 {
+    border-left: 1px solid #E2E6E7;
+    background: #F5F5F5;
+    padding: 20px 30px 15px 20px;
+    position: relative; }
+    .block-products .product-list .product-item h4 a {
+      color: #a41103;
+      opacity: 1;
+      letter-spacing: 1px;
+      transition: opacity 0.3s ease 0s; }
+      .block-products .product-list .product-item h4 a::before {
+        content: "\f105";
+        color: #a41103;
+        font-size: 20px;
+        font-family: "FontAwesome";
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%); }
+
+.block-products-detail .products-detail-title {
+  margin: 0 auto 50px;
+  font-size: 30px;
+  line-height: 1.5; }
+
+.block-products-detail .products-detail-imgdes {
+  margin-bottom: 20px; }
+  .block-products-detail .products-detail-imgdes img {
+    width: 100%; }
+
+.block-news .news-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 55px; }
+  .block-news .news-item .news-content {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .block-news .news-item::last-child {
+    margin-bottom: 0; }
+  .block-news .news-item .title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4a4a4a;
+    height: 30px;
+    overflow: hidden;
+    margin-bottom: 18px; }
+  .block-news .news-item .description {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #979797;
+    margin-bottom: 15px; }
+  .block-news .news-item .btn {
+    width: 158px;
+    height: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background-color: #a41103;
+    border: none;
+    padding: 0; }
+    .block-news .news-item .btn:hover {
+      background-color: #841207; }
+  .block-news .news-item .news-widgets {
+    margin-bottom: 15px; }
+    .block-news .news-item .news-widgets .date, .block-news .news-item .news-widgets .comments {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 35px; }
+      .block-news .news-item .news-widgets .date .img, .block-news .news-item .news-widgets .comments .img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain; }
+      .block-news .news-item .news-widgets .date span, .block-news .news-item .news-widgets .comments span {
+        font-size: 12px;
+        font-weight: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #979797;
+        margin-left: 15px; }
+
+.block-loadmore {
+  text-align: center;
+  margin-top: 55px; }
+  .block-loadmore a {
+    font-family: iCielAvenirLTStd-85Heavy;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #d8d8d8; }
+    .block-loadmore a:hover {
+      color: #000; }
+
 .mymap {
   width: 100%;
   height: 500px;
@@ -943,9 +1083,9 @@ footer {
   background: #f0f2f2;
   position: relative;
   overflow: hidden;
-  padding-top: 66px;
-  padding-bottom: 66px;
-  margin-top: 125px; }
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px; }
   footer .ft-logo {
     margin-bottom: 15px; }
   footer .ft-description {

@@ -10,14 +10,17 @@ html {
 	padding: 0;
 }
 a {
+	color: #a41103;
 	text-decoration: none;
 	word-wrap: break-word;
 	transition: all 0.25s;
 	&:hover {
+		color: #841207;
 		text-decoration: none;
 		transition: all 0.25s;
 	}
 	&:focus {
+		color: #841207;
 		outline: none;
 		text-decoration: none;
 		outline-offset: 0;

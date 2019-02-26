@@ -1,0 +1,72 @@
+.block-products {
+    .product-list {
+        .product-item {
+            position: relative;
+            background: #FFF;
+            padding-bottom: 30px;
+            overflow: hidden;
+            &:hover {
+                > a {
+                    img {
+                        transition: opacity 0.3s ease 0s;
+                        opacity: 0.8;
+                    }
+                }
+                h4 {
+                    a {
+                        transition: opacity 0.3s ease 0s;
+                        opacity: 0.6;
+                    }
+                }
+            }
+            &:nth-child(3n+1) {
+                h4 {
+                    border-left: none;                    
+                }
+            }
+            a {
+                img {
+                    transition: opacity 0.3s ease 0s;
+                }
+            }
+            h4 {
+                border-left: 1px solid #E2E6E7;
+                background: #F5F5F5;
+                padding: 20px 30px 15px 20px;
+                position: relative;
+                a {
+                    color: #a41103;
+                    opacity: 1;
+                    letter-spacing: 1px;
+                    transition: opacity 0.3s ease 0s;
+                    &::before {
+                        content: "\f105";
+                        color: #a41103;
+                        font-size: 20px;
+                        font-family: "FontAwesome";
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        -webkit-transform: translate(0, -50%);
+                        -ms-transform: translate(0, -50%);
+                        transform: translate(0, -50%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.block-products-detail {
+    .products-detail-title {
+        margin: 0 auto 50px;
+        font-size: 30px;
+        line-height: 1.5;
+    }
+    .products-detail-imgdes {
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+        }
+    }
+}
