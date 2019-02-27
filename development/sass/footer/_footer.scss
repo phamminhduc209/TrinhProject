@@ -39,7 +39,7 @@ footer {
                 width: 20px;
                 margin-right: 15px;
             }
-             .txt {
+            .txt {
                 float: left;
                 width: calc(100% - 50px);
                 font-size: 14px;
@@ -60,5 +60,10 @@ footer {
     li {
         display: inline-block;
         margin-right: 30px;
+        &:hover {
+            a {
+                opacity: .7;
+            }
+        }
     }
 }

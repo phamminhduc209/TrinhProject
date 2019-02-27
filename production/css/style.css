@@ -452,6 +452,52 @@ body {
       .header .block-menu .menu li.search {
         margin-right: 0px; }
 
+.search {
+  position: relative; }
+  .search input[type="text"] {
+    display: inline-block;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    color: #555;
+    padding: 3px;
+    padding-right: 15px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #FFF;
+    z-index: 3;
+    transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
+    cursor: pointer; }
+  .search input[type="text"]:focus:hover {
+    border-bottom: 1px solid #BBB; }
+  .search input[type="text"]:focus {
+    width: 700px;
+    z-index: 1;
+    border-bottom: 1px solid #BBB;
+    cursor: text; }
+  .search input[type="submit"] {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    color: red;
+    float: right;
+    text-indent: -10000px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .4s ease; }
+    .search input[type="submit"]:before {
+      content: "\f002";
+      font-family: "FontAwesome"; }
+  .search input[type="submit"]:hover {
+    opacity: 0.8; }
+
 /* ======================== COMPONENTS ======================== */
 /* Return To Top */
 .td-scroll-up {
@@ -694,13 +740,48 @@ body {
     padding: 0;
     margin-top: 10px;
     margin-bottom: 0; }
+    .block-breadcrumb .breadcrumb > .active {
+      color: #000; }
 
 .block-page {
-  padding-top: 40px; }
+  padding-top: 20px; }
 
 .block-fulltext p {
   line-height: 1.8;
   margin-bottom: 15px; }
+
+.block-fulltext ul {
+  margin: 15px 0; }
+  .block-fulltext ul li {
+    list-style: none;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 30px;
+    border: none; }
+    .block-fulltext ul li::before {
+      content: "\f00c";
+      font-family: "FontAwesome";
+      color: #a41103;
+      padding-right: 10px;
+      margin-left: -30px;
+      vertical-align: text-top;
+      font-size: 18px; }
+
+.block-fulltext table > tbody > tr:nth-child(odd) {
+  background: #F5F5F5; }
+
+.block-fulltext table > tbody > tr > td, .block-fulltext table > tbody > tr > th {
+  padding: 18px 30px;
+  font-size: 14px;
+  line-height: 24px;
+  border-top: none;
+  border-left: 1px solid #E2E6E7; }
+  .block-fulltext table > tbody > tr > td:first-child, .block-fulltext table > tbody > tr > th:first-child {
+    text-align: right;
+    border-left: none; }
 
 /* ======================== ELEMENTS ======================== */
 .block-mainvisual {
@@ -1128,3 +1209,5 @@ footer {
 .block-social li {
   display: inline-block;
   margin-right: 30px; }
+  .block-social li:hover a {
+    opacity: .7; }
