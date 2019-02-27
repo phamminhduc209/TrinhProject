@@ -29,42 +29,47 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-xs-12 block-logo">
-                    <h1 class="header-logo">
-                        <a href="index.html" title="">
-                            <img src="images/logo.png" alt="">
-                        </a>
-                    </h1>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="col-sm-8 col-xs-12 block-menu">
-                    <ul class="menu">
-                        <li class="active">
-                            <a href="index.html" title="Home">Home</a>
-                        </li>
-                        <li>
-                            <a href="products.html" title="Products">Products</a>
-                        </li>
-                        <li>
-                            <a href="news.html" title="News">News</a>
-                        </li>
-                        <li>
-                            <a href="contact.html" title="Contact Us">Contact Us</a>
-                        </li>
-                        <li class="search">
-                            <form action="" autocomplete="on">
-                                <input name="search" type="text" placeholder="What're we looking for ?">
-                                <input value="Submit" type="submit">
-                            </form>
-                        </li>
-                    </ul>
+        <div class="stick-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12 block-logo">
+                        <h1 class="header-logo">
+                            <a href="index.html" title="">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                        </h1>
+                        <button type="button" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="col-sm-8 col-xs-12 block-menu">
+                        <ul class="menu">
+                            <li class="active">
+                                <a href="index.html" title="Home">Home</a>
+                            </li>
+                            <li>
+                                <a href="products.html" title="Products">Products</a>
+                            </li>
+                            <li>
+                                <a href="news.html" title="News">News</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" title="Contact Us">Contact Us</a>
+                            </li>
+                            <li class="search">
+                                <span><i class="fa fa-search"></i></span>
+                                <form action="" autocomplete="on">
+                                    <input id="search" name="search" type="text" placeholder="What're we looking for ?">
+                                    <button value="Submit" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,7 +90,7 @@
             </div>
         </div>
         <!-- block-breadcrumb -->
-        <div class="block-page block-news">
+        <div class="block-news">
             <div class="container">
                 <div class="news-items">
                     <ul>

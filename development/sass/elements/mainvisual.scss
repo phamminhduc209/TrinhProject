@@ -78,3 +78,41 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .block-mainvisual {
+    margin-bottom: 30px;
+    .item {
+        .figcaption {
+            bottom: 20px;
+            left: 50px;
+            right: 50px;
+            .box-table {
+                .box-td {
+                    .box-des {
+                        padding: 10px 0;
+                        text-align: center;
+                    }
+                }
+            }
+            .text-large {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .text-medium {
+                font-size: 12px;
+            }
+        }
+    }
+    .owl-carousel {
+        .owl-nav {
+            .owl-prev {
+                left: 10px;
+            }
+            .owl-next {
+                right: 10px;
+            }
+        }
+    }
+}
+}

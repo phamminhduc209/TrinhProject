@@ -28,18 +28,18 @@
     }
     &:hover {
         color: #fff;
-        background: #707070;
+        background: #a41103;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         transition: all 0.3s;
     }
-}
-.td-scroll-up-visible {
-    transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
+    &-visible {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+    }
 }
 
 .box-table {
@@ -351,5 +351,18 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 767px) {
+    .block {
+        margin-bottom: 40px;
+    }
+    .block-breadcrumb {
+        padding: 15px 0;
+    }
+    .block-title-style1 {
+        font-size: 25px;
+        margin-bottom: 20px;
     }
 }

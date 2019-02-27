@@ -1,10 +1,35 @@
 .header {
     background: #fff;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.05);
+    .is-sticky {
+        .stick-header {
+            background: #FFF;
+            z-index: 99;
+            -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,1);
+            -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,1);
+            box-shadow: 0px 5px 10px 0px rgba(0,0,0,1);
+        }
+    }
     .header-logo {
         padding: 27px 0;
     }
+    .navbar-toggle {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        right: 0;
+        padding: 0;
+        margin-top: 0;
+        cursor: pointer;
+        .icon-bar {
+            background-color: #c11201;
+        }
+    }
     .block-menu {
+        background: #fff;
+        z-index: 99;
         .menu {
             position: relative;
             overflow: hidden;
@@ -29,60 +54,101 @@
                 }
                 &.search {
                     margin-right: 0px;
+                    position: relative;
+                    form {
+                        border-bottom: 1px solid #BBB;
+                        width: 0;
+                        transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+                        position: absolute;
+                        top: -3px;
+                        right: -200%;
+                        input {
+                            width: calc(100% - 20px);
+                            display: inline-block;
+                            vertical-align: middle;
+                            padding: 3px 0;
+                        }
+                        button {
+                            display: inline-block;
+                            vertical-align: middle;
+                            background: none;
+                            border: none;
+                        }
+                    }
+                    &:hover {
+                        form {
+                            width: 700px;
+                            right: 0;
+                        }
+                    }
                 }
             }
         }
     }
 }
-.search {
-    position: relative;
-    input[type="text"] {
-        display: inline-block;
-        font-weight: 100;
-        border: none;
-        outline: none;
-        color: #555;
-        padding: 3px;
-        padding-right: 15px;
-        width: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background: #FFF;
-        z-index: 3;
-        transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
-        cursor: pointer;
-    }
-    input[type="text"]:focus:hover {
-        border-bottom: 1px solid #BBB;
-    }
-    input[type="text"]:focus {
-        width: 700px;
-        z-index: 1;
-        border-bottom: 1px solid #BBB;
-        cursor: text;
-    }
-    input[type="submit"] {
-        height: 20px;
-        width: 20px;
-        display: inline-block;
-        color:red;
-        float: right;
-        text-indent: -10000px;
-        border: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 2;
-        opacity: 0.4;
-        cursor: pointer;
-        transition: opacity .4s ease;
-        &:before {
-            content: "\f002";
-            font-family: "FontAwesome";
+
+@media (max-width: 1024px) {
+    .header {
+        .block-menu {
+            .menu {
+                li {
+                    &.search {
+                        &:hover {
+                            form {
+                                width: 600px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-    input[type="submit"]:hover {
-        opacity: 0.8;
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .header {
+        .block-menu {
+            .menu {
+                li {
+                    margin: 35px 0 20px 20px;
+                    &.search {
+                        &:hover {
+                            form {
+                                width: 420px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .header {
+        .header-logo {
+            padding: 10px 0;
+        }
+        .block-menu {
+            .menu {
+                display: none;
+                text-align: left;
+                li {
+                    display: block;
+                    margin: 0 0 15px;
+                    a {
+                        font-size: 14px;
+                    }
+                    &.search {
+                        &:hover {
+                            form {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

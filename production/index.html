@@ -27,42 +27,47 @@
     </head>
     <body>
         <header class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 col-xs-12 block-logo">
-                        <h1 class="header-logo">
-                            <a href="index.html" title="">
-                                <img src="images/logo.png" alt="">
-                            </a>
-                        </h1>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="col-sm-8 col-xs-12 block-menu">
-                        <ul class="menu">
-                            <li class="active">
-                                <a href="index.html" title="Home">Home</a>
-                            </li>
-                            <li>
-                                <a href="products.html" title="Products">Products</a>
-                            </li>
-                            <li>
-                                <a href="news.html" title="News">News</a>
-                            </li>
-                            <li>
-                                <a href="contact.html" title="Contact Us">Contact Us</a>
-                            </li>
-                            <li class="search">
-                                <form action="" autocomplete="on">
-                                    <input name="search" type="text" placeholder="What're we looking for ?">
-                                    <input value="Submit" type="submit">
-                                </form>
-                            </li>
-                        </ul>
+            <div class="stick-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 block-logo">
+                            <h1 class="header-logo">
+                                <a href="index.html" title="">
+                                    <img src="images/logo.png" alt="">
+                                </a>
+                            </h1>
+                            <button type="button" class="navbar-toggle">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="col-sm-8 col-xs-12 block-menu">
+                            <ul class="menu">
+                                <li class="active">
+                                    <a href="index.html" title="Home">Home</a>
+                                </li>
+                                <li>
+                                    <a href="products.html" title="Products">Products</a>
+                                </li>
+                                <li>
+                                    <a href="news.html" title="News">News</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" title="Contact Us">Contact Us</a>
+                                </li>
+                                <li class="search">
+                                    <span><i class="fa fa-search"></i></span>
+                                    <form action="" autocomplete="on">
+                                        <input id="search" name="search" type="text" placeholder="What're we looking for ?">
+                                        <button value="Submit" type="submit">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -254,7 +259,7 @@
             <section class="block block-partner">
                 <div class="container">
                     <h2 class="block-title block-title-style1">OUR PARTNER</h2>
-                    <ul class="owl-carousel owl-theme owl-style2" data-nav="false" data-dots="true" data-loop="true" data-autoplay="true" data-margin="30" data-responsive='{"0":{"items":1},"480":{"items":2},"600":{"items":3},"768":{"items":4},"800":{"items":5},"992":{"items":6}}'>
+                    <ul class="owl-carousel owl-theme owl-style2" data-nav="false" data-dots="true" data-loop="true" data-autoplay="true" data-margin="30" data-responsive='{"0":{"items":3},"480":{"items":3},"600":{"items":3},"768":{"items":4},"800":{"items":5},"992":{"items":6}}'>
                         <li class="item" data-dot="1"><img src="images/partner/partner1.png" alt=""></li>
                         <li class="item" data-dot="2"><img src="images/partner/partner2.png" alt=""></li>
                         <li class="item" data-dot="3"><img src="images/partner/partner3.png" alt=""></li>
@@ -334,7 +339,7 @@
         <script src="js/bootstrap.min.js"></script>
         <!-- ===== JS Owl ===== -->
 	    <script src="libs/owl/owl.carousel.min.js"></script>
-        <!-- ===== JS Owl ===== -->
+        <!-- ===== JS Sticky ===== -->
         <script src="libs/sticky/jquery.sticky.js"></script>
         <!-- JS main -->
         <script src="js/main.js"></script>

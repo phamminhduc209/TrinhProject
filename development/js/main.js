@@ -34,4 +34,8 @@
         });
     });
 
+    $('.header .navbar-toggle').click(function () {
+        $('.header .block-menu .menu').toggle('slow');
+    });
+
 })(jQuery); // End of use strict

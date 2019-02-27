@@ -70,3 +70,21 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .block-products {
+        .product-list {
+            .product-item {
+                .row {
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .block-products-detail {
+        .products-detail-title {
+            margin-bottom: 20px;
+        }
+    }
+}
