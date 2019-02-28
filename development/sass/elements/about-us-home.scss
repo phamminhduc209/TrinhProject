@@ -25,17 +25,28 @@
             font-weight: normal;
             line-height: 1.71;
             letter-spacing: 0.5px;
-            margin-bottom: 30px;
-        }
-        .btn {
-            width: 158px;
-            height: 48px;
-            border-radius: 3px;
-            background-color: #C11201;
-            border: none;
-            font-size: 15px;
-            font-weight: 900;
-            color: #FFF;
+            margin-bottom: 15px;
+            max-height: 280px;
+            overflow: hidden;
+            overflow-y: scroll;
+            padding-right: 15px;
+            text-align: justify;
+            &::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                border-radius: 10px;
+                background-color: transparent;
+            }
+            &::-webkit-scrollbar {
+                width: 2px;
+                background-color: transparent;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                background-color: #D62929;
+            }
+            &:hover,
+            &:focus {}
         }
     }
     .block-img {

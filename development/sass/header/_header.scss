@@ -1,6 +1,6 @@
 .header {
     background: #fff;
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.05);
+    // box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.05);
     .is-sticky {
         .stick-header {
             background: #FFF;
@@ -10,8 +10,51 @@
             box-shadow: 0px 5px 10px 0px rgba(0,0,0,1);
         }
     }
+    .header-top {
+        background: #F5F5F5;
+        .block-language {
+            ul {
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                text-align: right;
+                li {
+                    padding: 5px 7px;
+                    border-left: 1px solid #DDD;
+                    &:nth-child(1) {
+                        order: 2;
+                        border: none;
+                        span {
+                            &:last-child {
+                                margin: 3px;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        order: 1;
+                    }
+                    &:nth-child(3) {
+                        order: 0;
+                        border-right: 1px solid #DDD;
+                    }
+                    a {
+                        color: #000;
+                        font-size: 13px;
+                        span {
+                            &:last-child {
+                                padding-top: 3px;
+                            }
+                        }
+                        &:hover {
+                            color: #a41103;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .header-logo {
-        padding: 27px 0;
+        padding: 20px 0;
     }
     .navbar-toggle {
         position: absolute;
@@ -37,7 +80,7 @@
             li {
                 display: inline-block;
                 vertical-align: middle;
-                margin: 35px 0 35px 40px;
+                margin: 30px 0 30px 40px;
                 a {
                     color: #6d6c6c;
                     font-size: 16px;
@@ -124,6 +167,15 @@
     }
 }
 
+@media (min-width: 768px) {
+    .header {
+        .block-menu {
+            .menu {
+                display: block !important;
+            }
+        }
+    }
+}
 
 @media (max-width: 767px) {
     .header {
