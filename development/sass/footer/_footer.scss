@@ -7,6 +7,11 @@ footer {
     margin-top: 50px;
     .ft-logo {
         margin-bottom: 15px;
+        color: #FFC120;
+        font-family: $fontOpensans;
+        font-size: 30px;
+        font-weight: bold;
+        text-shadow: 3px 3px 0px #727272;
     }
     .ft-description {
         font-size: 14px;
@@ -14,7 +19,7 @@ footer {
         line-height: 1.5;
         letter-spacing: 0.3px;
         text-align: left;
-        color: #4a4a4a;
+        color: #000;
     }
     .block-wd {
         .block-title {
@@ -23,31 +28,27 @@ footer {
             line-height: normal;
             letter-spacing: 0.2px;
             text-align: left;
-            color: #4a4a4a;
+            color: #000;
             margin-bottom: 25px;
             padding-top: 15px;
         }
     }
     .block-address {
         .link {
-            display: block;
-            width: 100%;
-            float: left;
-            margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
             .img {
-                float: left;
-                width: 20px;
                 margin-right: 15px;
+                i {
+                    font-size: 22px;
+                    color: #000;
+                }
             }
             .txt {
-                float: left;
-                width: calc(100% - 50px);
                 font-size: 14px;
                 font-weight: normal;
-                line-height: 1.5;
-                letter-spacing: 0.3px;
-                text-align: left;
-                color: #4a4a4a;
+                color: #000;
             }
             &::last-child {
                 margin-bottom: 0;
@@ -59,7 +60,7 @@ footer {
 .block-social {
     li {
         display: inline-block;
-        margin-right: 30px;
+        margin-right: 10px;
         &:hover {
             a {
                 opacity: .7;
