@@ -20,6 +20,11 @@
     }
     .item {
         position: relative;
+        img {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+        }
         .figcaption {
             position: absolute;
             top: 0;

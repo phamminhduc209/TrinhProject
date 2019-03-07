@@ -17,7 +17,7 @@
             margin-bottom: 15px;
         }
         .des {
-            font-family: $fontUnna;
+            // font-family: $fontUnna;
             font-size: 15px;
             font-weight: normal;
             line-height: 1.71;
@@ -49,6 +49,8 @@
     .block-img {
         img {
             width: 100%;
+            height: 340px;
+            object-fit: cover;
         }
     }
 }

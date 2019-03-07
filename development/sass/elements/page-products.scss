@@ -27,6 +27,9 @@
             a {
                 img {
                     transition: opacity 0.3s ease 0s;
+                    width: 100%;
+                    height: 220px;
+                    object-fit: cover;
                 }
             }
             h4 {
@@ -67,6 +70,8 @@
         margin-bottom: 20px;
         img {
             width: 100%;
+            height: 450px;
+            object-fit: contain;
         }
     }
 }
