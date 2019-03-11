@@ -1,5 +1,8 @@
 .block-mainvisual {
     margin-bottom: 65px;
+    .owl-item {
+        touch-action: none;
+    }
     .active {
         .item {
             .text-large {
@@ -22,7 +25,7 @@
         position: relative;
         img {
             width: 100%;
-            max-height: 450px;
+            max-height: 500px;
             object-fit: cover;
         }
         .figcaption {
@@ -87,37 +90,42 @@
 @media (max-width: 767px) {
     .block-mainvisual {
     margin-bottom: 30px;
-    .item {
-        .figcaption {
-            bottom: 20px;
-            left: 50px;
-            right: 50px;
-            .box-table {
-                .box-td {
-                    .box-des {
-                        padding: 10px 0;
-                        text-align: center;
+        .item {
+            img {
+                max-height: none;
+                height: 360px;
+                object-fit: cover;
+            }
+            .figcaption {
+                bottom: 20px;
+                left: 50px;
+                right: 50px;
+                .box-table {
+                    .box-td {
+                        .box-des {
+                            padding: 10px 0;
+                            text-align: center;
+                        }
                     }
                 }
+                .text-large {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+                .text-medium {
+                    font-size: 12px;
+                }
             }
-            .text-large {
-                font-size: 16px;
-                margin-bottom: 10px;
-            }
-            .text-medium {
-                font-size: 12px;
+        }
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    left: 10px;
+                }
+                .owl-next {
+                    right: 10px;
+                }
             }
         }
     }
-    .owl-carousel {
-        .owl-nav {
-            .owl-prev {
-                left: 10px;
-            }
-            .owl-next {
-                right: 10px;
-            }
-        }
-    }
-}
 }

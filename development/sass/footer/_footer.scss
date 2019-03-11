@@ -8,7 +8,6 @@ footer {
     .ft-logo {
         margin-bottom: 15px;
         color: #FFC120;
-        font-family: $fontOpensans;
         font-size: 30px;
         font-weight: bold;
         text-shadow: 3px 3px 0px #727272;
@@ -18,8 +17,9 @@ footer {
         font-weight: normal;
         line-height: 1.5;
         letter-spacing: 0.3px;
-        text-align: left;
+        text-align: center;
         color: #000;
+        max-width: 250px;
     }
     .block-wd {
         .block-title {
@@ -65,6 +65,15 @@ footer {
             a {
                 opacity: .7;
             }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    footer {
+        .ft-description {
+            max-width: 100%;
+            text-align: left;
         }
     }
 }

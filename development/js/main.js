@@ -1,7 +1,7 @@
 (function($){
     "use strict";
     /*  [ Sticky Menu ] */
-    // $('.stick-header').sticky({ topSpacing: 0 });
+    $('.stick-header').sticky({ topSpacing: 0 });
     
     // ===== Scroll to Top ==== 
     $(window).scroll(function () {
